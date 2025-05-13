@@ -1,0 +1,17 @@
+name = "ondemand-api-proxy2"
+main = "src/index.js"
+compatibility_date = "2025-05-09"
+
+# 核心配置变量
+[vars]
+DEBUG_MODE = "false"
+BAD_KEY_RETRY_INTERVAL = "600"
+ONDEMAND_API_BASE = "https://api.on-demand.io/chat/v1"
+DEFAULT_ONDEMAND_MODEL = "predefined-openai-gpt4o"
+ONDEMAND_APIKEYS = "[\"\"]"
+
+# 部署区域配置 - 思考计算的地理政治学
+[placement]
+mode = "smart"
+# 如果有地理限制考量，可以取消下行注释并定制
+# regions = ["wnam", "enam", "weur", "eeur"]
